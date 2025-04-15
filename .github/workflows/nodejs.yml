@@ -30,6 +30,6 @@ jobs:
 
     - name: Push to DockerHub
       run: |
-        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-        docker tag my-webapp your-dockerhub-username/my-webapp
-        docker push your-dockerhub-username/my-webapp
+             echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+             docker tag my-webapp mayuresh23/my-webapp
+             docker push mayuresh23/my-webapp
